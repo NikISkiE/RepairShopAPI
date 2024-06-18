@@ -1,0 +1,6 @@
+@RepairShopAPI_HostAddress = http://localhost:5129
+
+GET {{RepairShopAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
