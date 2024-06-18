@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using RepairShopAPI.Data;
 
 namespace RepairShopAPI
 {
@@ -6,6 +9,8 @@ namespace RepairShopAPI
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddDbContext<RepairShopAPIContext>(options =>
+                options.UseNpgsql(builder.Configuration.GetConnectionString("RepairShopAPIContext") ?? throw new InvalidOperationException("Connection string 'RepairShopAPIContext' not found.")));
 
             // Add services to the container.
 
