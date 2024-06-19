@@ -15,7 +15,6 @@ namespace RepairShopAPI
         [Required]
         public decimal price { get; set; }
         [Required]
-        public string serial { get; set; }
-        public string localisation { get; set; }
+        public string in_stock { get; set; }
     }
 }
