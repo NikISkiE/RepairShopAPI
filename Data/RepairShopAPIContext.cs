@@ -16,9 +16,9 @@ namespace RepairShopAPI.Data
 
         public DbSet<RepairShopAPI.accounts> accounts { get; set; } = default!;
         public DbSet<RepairShopAPI.appointments> appointments { get; set; } = default!;
-        public DbSet<RepairShopAPI.in_stock> in_stock { get; set; } = default!;
         public DbSet<RepairShopAPI.parts> parts { get; set; } = default!;
         public DbSet<RepairShopAPI.persons> persons { get; set; } = default!;
         public DbSet<RepairShopAPI.usedparts> usedparts { get; set; } = default!;
+        public DbSet<RepairShopAPI.serials_location> serials_location { get; set; } = default!;
     }
 }

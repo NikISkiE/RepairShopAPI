@@ -15,7 +15,7 @@ namespace RepairShopAPI
         public string email { get; set; }
         public string phone { get; set; }
         public string address { get; set; }
-        public string account_id { get; set; }
+        public int account_id { get; set; }
         [Required]
         public int is_worker { get; set; }
     }
